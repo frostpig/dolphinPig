@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dolphinPig:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dolphinPig.war">
+      <element id="artifact" artifact-name="dolphinPig:war exploded" />
+    </root>
+  </artifact>
+</component>
