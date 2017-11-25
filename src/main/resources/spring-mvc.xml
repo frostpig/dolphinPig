@@ -19,10 +19,10 @@
     <mvc:annotation-driven />
     <!-- 静态资源访问 -->
     <!--如果webapp下你新建了文件夹，想访问里面的静态资源，那么就要在这配置一下-->
-    <mvc:resources location="/images/" mapping="/images/**"/>
+ <!--   <mvc:resources location="/images/" mapping="/images/**"/>
     <mvc:resources location="/css/" mapping="/css/**"/>
     <mvc:resources location="/styles/" mapping="/styles/**"/>
-    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>-->
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
     <bean id="mappingJacksonHttpMessageConverter"
@@ -46,7 +46,7 @@
     <!-- 定义跳转的文件的前后缀 ，视图模式配置 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="prefix" value="/webapp/" />
         <property name="suffix" value=".jsp"/>
     </bean>
     <!-- 配置dbcp数据库连接池 -->
